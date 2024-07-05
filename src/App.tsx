@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import WatchPage from './pages/WatchPage';
+import AnimePage from './pages/AnimePage';
+import HelloWorldPage from './pages/HelloWorldPage'; // Import halaman baru
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/watch/:endpoint" element={<WatchPage />} />
+        <Route path="/anime/:endpoint" element={<AnimePage />} />
+        <Route path="/hello-world" element={<HelloWorldPage />} /> {/* Tambahkan rute baru */}
       </Routes>
     </Router>
   );

@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold text-center mb-8 text-white">Anime Articles</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-blue-400">Anime Articles</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {articles.map((article, index) => (
           <a
